@@ -1,1 +1,76 @@
-[]
+[
+    {
+        "id": "c3bd587daba579a0",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d7057d54dc99cacf",
+        "type": "function",
+        "z": "c3bd587daba579a0",
+        "name": "function 1",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 320,
+        "wires": [
+            [
+                "78d1ef0d91bf52fe"
+            ]
+        ]
+    },
+    {
+        "id": "1d480ad57be88159",
+        "type": "http request",
+        "z": "c3bd587daba579a0",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": false,
+        "url": "",
+        "persist": false,
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 170,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c01d2dfe7617d01a",
+        "type": "http in",
+        "z": "c3bd587daba579a0",
+        "name": "",
+        "url": "",
+        "method": "get",
+        "upload": false,
+        "x": 230,
+        "y": 360,
+        "wires": [
+            [
+                "d7057d54dc99cacf"
+            ]
+        ]
+    },
+    {
+        "id": "78d1ef0d91bf52fe",
+        "type": "http response",
+        "z": "c3bd587daba579a0",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 950,
+        "y": 340,
+        "wires": []
+    }
+]
