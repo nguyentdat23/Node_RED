@@ -50,7 +50,7 @@
         "id": "c01d2dfe7617d01a",
         "type": "http in",
         "z": "c3bd587daba579a0",
-        "name": "",
+        "name": "123",
         "url": "",
         "method": "get",
         "upload": false,
